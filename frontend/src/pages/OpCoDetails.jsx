@@ -9,22 +9,22 @@ const OpcoDetails = () => {
       coverage: "84%",
       tools: [
         {
-          name: "CrowdStrike",
-          vendor: "CrowdStrike",
-          category: "EDR",
-          owner: "SOC Team",
+          name: "Github",
+          vendor: "Github",
+          category: "Version Control",
+          owner: "DevOps Team",
         },
         {
-          name: "Splunk",
-          vendor: "Splunk",
-          category: "SIEM",
-          owner: "Security Engineering",
+          name: "Kafka",
+          vendor: "Confluent",
+          category: "Message Broker",
+          owner: "Technology Team",
         },
         {
           name: "Okta",
           vendor: "Okta",
           category: "IAM",
-          owner: "Identity Team",
+          owner: "Security Team",
         },
       ],
       systems: [
@@ -44,16 +44,16 @@ const OpcoDetails = () => {
       coverage: "79%",
       tools: [
         {
-          name: "Microsoft Defender",
-          vendor: "Microsoft",
-          category: "EDR",
-          owner: "IT Security",
+          name: "Pulsar",
+          vendor: "Apache",
+          category: "Message Broker",
+          owner: "Technology Team",
         },
         {
-          name: "Qualys",
-          vendor: "Qualys",
-          category: "Vulnerability",
-          owner: "Risk Team",
+          name: "Redis",
+          vendor: "Redis Labs",
+          category: "In-Memory Data Store",
+          owner: "Technology Team",
         },
       ],
       systems: [
@@ -70,10 +70,10 @@ const OpcoDetails = () => {
       coverage: "79%",
       tools: [
         {
-          name: "CrowdStrike",
-          vendor: "CrowdStrike",
-          category: "EDR",
-          owner: "SOC Team",
+          name: "Salt",
+          vendor: "SaltStack",
+          category: "Configuration Management",
+          owner: "Infrastructure Team",
         },
         {
           name: "Splunk",
@@ -85,7 +85,7 @@ const OpcoDetails = () => {
           name: "Okta",
           vendor: "Okta",
           category: "IAM",
-          owner: "Identity Team",
+          owner: "Security Team",
         },
       ],
       systems: [
@@ -119,7 +119,7 @@ const OpcoDetails = () => {
           name: "Okta",
           vendor: "Okta",
           category: "IAM",
-          owner: "Identity Team",
+          owner: "Security Team",
         },
       ],
       systems: [
@@ -153,7 +153,7 @@ const OpcoDetails = () => {
           name: "Okta",
           vendor: "Okta",
           category: "IAM",
-          owner: "Identity Team",
+          owner: "Security Team",
         },
       ],
       systems: [
@@ -187,7 +187,7 @@ const OpcoDetails = () => {
           name: "Okta",
           vendor: "Okta",
           category: "IAM",
-          owner: "Identity Team",
+          owner: "Security Team",
         },
       ],
       systems: [
