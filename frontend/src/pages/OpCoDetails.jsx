@@ -99,6 +99,108 @@ const OpcoDetails = () => {
         "API IAM controls unavailable",
       ],
     },
+    "fcmb-uk": {
+      name: "FCMB United Kingdom",
+      coverage: "79%",
+      tools: [
+        {
+          name: "CrowdStrike",
+          vendor: "CrowdStrike",
+          category: "EDR",
+          owner: "SOC Team",
+        },
+        {
+          name: "Splunk",
+          vendor: "Splunk",
+          category: "SIEM",
+          owner: "Security Engineering",
+        },
+        {
+          name: "Okta",
+          vendor: "Okta",
+          category: "IAM",
+          owner: "Identity Team",
+        },
+      ],
+      systems: [
+        "Cloud Infrastructure",
+        "Endpoints",
+        "Applications",
+        "APIs",
+      ],
+      gaps: [
+        "DLP coverage missing",
+        "API IAM controls unavailable",
+      ],
+    },
+    "fcmb-us": {
+      name: "FCMB United States",
+      coverage: "79%",
+      tools: [
+        {
+          name: "CrowdStrike",
+          vendor: "CrowdStrike",
+          category: "EDR",
+          owner: "SOC Team",
+        },
+        {
+          name: "Splunk",
+          vendor: "Splunk",
+          category: "SIEM",
+          owner: "Security Engineering",
+        },
+        {
+          name: "Okta",
+          vendor: "Okta",
+          category: "IAM",
+          owner: "Identity Team",
+        },
+      ],
+      systems: [
+        "Cloud Infrastructure",
+        "Endpoints",
+        "Applications",
+        "APIs",
+      ],
+      gaps: [
+        "DLP coverage missing",
+        "API IAM controls unavailable",
+      ],
+    },
+    "fcmb-in": {
+      name: "FCMB India",
+      coverage: "79%",
+      tools: [
+        {
+          name: "CrowdStrike",
+          vendor: "CrowdStrike",
+          category: "EDR",
+          owner: "SOC Team",
+        },
+        {
+          name: "Splunk",
+          vendor: "Splunk",
+          category: "SIEM",
+          owner: "Security Engineering",
+        },
+        {
+          name: "Okta",
+          vendor: "Okta",
+          category: "IAM",
+          owner: "Identity Team",
+        },
+      ],
+      systems: [
+        "Cloud Infrastructure",
+        "Endpoints",
+        "Applications",
+        "APIs",
+      ],
+      gaps: [
+        "DLP coverage missing",
+        "API IAM controls unavailable",
+      ],
+    },
   };
 
   const opco = opcos[id];
