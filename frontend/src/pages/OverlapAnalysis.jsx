@@ -45,20 +45,17 @@ const OverlapAnalysis = () => {
 
   return (
     <div className="flex-1 bg-slate-100 p-8 overflow-auto">
-
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold">
-          Overlap Analysis
-        </h1>
+        <h1 className="text-3xl font-bold">Overlap Analysis</h1>
         <p className="text-slate-500 mt-1">
-          Identify duplicate and redundant security tools across the organization
+          Identify duplicate and redundant security tools across the
+          organization
         </p>
       </div>
 
       {/* Table */}
       <div className="bg-white rounded-3xl shadow-sm overflow-hidden max-w-6xl mx-auto">
-
         {/* Header */}
         <div className="grid grid-cols-4 bg-slate-900 text-white p-4 text-sm font-semibold">
           <div>Category</div>
@@ -73,11 +70,8 @@ const OverlapAnalysis = () => {
             key={item.category}
             className="grid grid-cols-4 p-4 border-b hover:bg-slate-50 items-center"
           >
-
             {/* Category */}
-            <div className="font-semibold">
-              {item.category}
-            </div>
+            <div className="font-semibold">{item.category}</div>
 
             {/* Tools */}
             <div className="text-slate-600 text-sm">
@@ -93,13 +87,12 @@ const OverlapAnalysis = () => {
             <div>
               <span
                 className={`px-3 py-1 rounded-full text-xs font-medium ${getSeverityColor(
-                  item.severity
+                  item.severity,
                 )}`}
               >
                 {item.severity}
               </span>
             </div>
-
           </div>
         ))}
       </div>

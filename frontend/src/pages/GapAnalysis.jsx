@@ -45,12 +45,9 @@ const GapAnalysis = () => {
 
   return (
     <div className="flex-1 bg-slate-100 p-8 overflow-auto">
-
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold">
-          Gap Analysis
-        </h1>
+        <h1 className="text-3xl font-bold">Gap Analysis</h1>
         <p className="text-slate-500 mt-1">
           Identify missing security coverage across systems
         </p>
@@ -58,7 +55,6 @@ const GapAnalysis = () => {
 
       {/* Table */}
       <div className="bg-white rounded-3xl shadow-sm overflow-hidden max-w-5xl mx-auto">
-
         {/* Header */}
         <div className="grid grid-cols-3 bg-slate-900 text-white p-4 text-sm font-semibold">
           <div>System</div>
@@ -72,30 +68,24 @@ const GapAnalysis = () => {
             key={item.system}
             className="grid grid-cols-3 p-4 border-b hover:bg-slate-50 items-center"
           >
-
             {/* System */}
-            <div className="font-semibold">
-              {item.system}
-            </div>
+            <div className="font-semibold">{item.system}</div>
 
             {/* Missing Controls */}
             <div className="text-slate-600 text-sm">
-              {item.missing.length > 0
-                ? item.missing.join(", ")
-                : "No gaps"}
+              {item.missing.length > 0 ? item.missing.join(", ") : "No gaps"}
             </div>
 
             {/* Risk */}
             <div>
               <span
                 className={`px-3 py-1 rounded-full text-xs font-medium ${getRiskColor(
-                  item.risk
+                  item.risk,
                 )}`}
               >
                 {item.risk}
               </span>
             </div>
-
           </div>
         ))}
       </div>

@@ -27,16 +27,8 @@ const OpcoDetails = () => {
           owner: "Security Team",
         },
       ],
-      systems: [
-        "Cloud Infrastructure",
-        "Endpoints",
-        "Applications",
-        "APIs",
-      ],
-      gaps: [
-        "DLP coverage missing",
-        "API IAM controls unavailable",
-      ],
+      systems: ["Cloud Infrastructure", "Endpoints", "Applications", "APIs"],
+      gaps: ["DLP coverage missing", "API IAM controls unavailable"],
     },
 
     "fcmb-ke": {
@@ -56,16 +48,10 @@ const OpcoDetails = () => {
           owner: "Technology Team",
         },
       ],
-      systems: [
-        "Endpoints",
-        "Databases",
-        "Network Infrastructure",
-      ],
-      gaps: [
-        "No DLP tooling",
-      ],
+      systems: ["Endpoints", "Databases", "Network Infrastructure"],
+      gaps: ["No DLP tooling"],
     },
-     "fcmb-gh": {
+    "fcmb-gh": {
       name: "FCMB Ghana",
       coverage: "79%",
       tools: [
@@ -88,16 +74,8 @@ const OpcoDetails = () => {
           owner: "Security Team",
         },
       ],
-      systems: [
-        "Cloud Infrastructure",
-        "Endpoints",
-        "Applications",
-        "APIs",
-      ],
-      gaps: [
-        "DLP coverage missing",
-        "API IAM controls unavailable",
-      ],
+      systems: ["Cloud Infrastructure", "Endpoints", "Applications", "APIs"],
+      gaps: ["DLP coverage missing", "API IAM controls unavailable"],
     },
     "fcmb-uk": {
       name: "FCMB United Kingdom",
@@ -122,16 +100,8 @@ const OpcoDetails = () => {
           owner: "Security Team",
         },
       ],
-      systems: [
-        "Cloud Infrastructure",
-        "Endpoints",
-        "Applications",
-        "APIs",
-      ],
-      gaps: [
-        "DLP coverage missing",
-        "API IAM controls unavailable",
-      ],
+      systems: ["Cloud Infrastructure", "Endpoints", "Applications", "APIs"],
+      gaps: ["DLP coverage missing", "API IAM controls unavailable"],
     },
     "fcmb-us": {
       name: "FCMB United States",
@@ -156,16 +126,8 @@ const OpcoDetails = () => {
           owner: "Security Team",
         },
       ],
-      systems: [
-        "Cloud Infrastructure",
-        "Endpoints",
-        "Applications",
-        "APIs",
-      ],
-      gaps: [
-        "DLP coverage missing",
-        "API IAM controls unavailable",
-      ],
+      systems: ["Cloud Infrastructure", "Endpoints", "Applications", "APIs"],
+      gaps: ["DLP coverage missing", "API IAM controls unavailable"],
     },
     "fcmb-in": {
       name: "FCMB India",
@@ -190,16 +152,8 @@ const OpcoDetails = () => {
           owner: "Security Team",
         },
       ],
-      systems: [
-        "Cloud Infrastructure",
-        "Endpoints",
-        "Applications",
-        "APIs",
-      ],
-      gaps: [
-        "DLP coverage missing",
-        "API IAM controls unavailable",
-      ],
+      systems: ["Cloud Infrastructure", "Endpoints", "Applications", "APIs"],
+      gaps: ["DLP coverage missing", "API IAM controls unavailable"],
     },
   };
 
@@ -208,65 +162,43 @@ const OpcoDetails = () => {
   if (!opco) {
     return (
       <div className="flex-1 p-8">
-        <h1 className="text-2xl font-bold">
-          Operating Company not found
-        </h1>
+        <h1 className="text-2xl font-bold">Operating Company not found</h1>
       </div>
     );
   }
 
   return (
     <div className="flex-1 bg-slate-100 p-8 overflow-auto">
-
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold">
-          {opco.name}
-        </h1>
+        <h1 className="text-3xl font-bold">{opco.name}</h1>
 
-        <p className="text-slate-500 mt-1">
-          Security visibility overview
-        </p>
+        <p className="text-slate-500 mt-1">Security visibility overview</p>
       </div>
 
       {/* Top Stats */}
       <div className="grid grid-cols-3 gap-5 mb-8">
-
         <div className="bg-white p-6 rounded-3xl shadow-sm">
-          <p className="text-slate-500 text-sm">
-            Coverage Score
-          </p>
+          <p className="text-slate-500 text-sm">Coverage Score</p>
 
-          <h2 className="text-3xl font-bold mt-2">
-            {opco.coverage}
-          </h2>
+          <h2 className="text-3xl font-bold mt-2">{opco.coverage}</h2>
         </div>
 
         <div className="bg-white p-6 rounded-3xl shadow-sm">
-          <p className="text-slate-500 text-sm">
-            Security Tools
-          </p>
+          <p className="text-slate-500 text-sm">Security Tools</p>
 
-          <h2 className="text-3xl font-bold mt-2">
-            {opco.tools.length}
-          </h2>
+          <h2 className="text-3xl font-bold mt-2">{opco.tools.length}</h2>
         </div>
 
         <div className="bg-white p-6 rounded-3xl shadow-sm">
-          <p className="text-slate-500 text-sm">
-            Protected Systems
-          </p>
+          <p className="text-slate-500 text-sm">Protected Systems</p>
 
-          <h2 className="text-3xl font-bold mt-2">
-            {opco.systems.length}
-          </h2>
+          <h2 className="text-3xl font-bold mt-2">{opco.systems.length}</h2>
         </div>
-
       </div>
 
       {/* Tools */}
       <div className="bg-white rounded-3xl shadow-sm overflow-hidden mb-8">
-
         <div className="grid grid-cols-4 bg-slate-900 text-white p-4 font-semibold">
           <div>Tool</div>
           <div>Vendor</div>
@@ -279,9 +211,7 @@ const OpcoDetails = () => {
             key={tool.name}
             className="grid grid-cols-4 p-4 border-b hover:bg-slate-50"
           >
-            <div className="font-medium">
-              {tool.name}
-            </div>
+            <div className="font-medium">{tool.name}</div>
 
             <div>{tool.vendor}</div>
 
@@ -290,17 +220,13 @@ const OpcoDetails = () => {
             <div>{tool.owner}</div>
           </div>
         ))}
-
       </div>
 
       {/* Bottom Grid */}
       <div className="grid grid-cols-2 gap-6">
-
         {/* Systems */}
         <div className="bg-white rounded-3xl shadow-sm p-6">
-          <h2 className="font-bold text-lg mb-5">
-            Protected Systems
-          </h2>
+          <h2 className="font-bold text-lg mb-5">Protected Systems</h2>
 
           <div className="flex flex-wrap gap-3">
             {opco.systems.map((system) => (
@@ -316,9 +242,7 @@ const OpcoDetails = () => {
 
         {/* Gaps */}
         <div className="bg-white rounded-3xl shadow-sm p-6">
-          <h2 className="font-bold text-lg mb-5">
-            Gap Summary
-          </h2>
+          <h2 className="font-bold text-lg mb-5">Gap Summary</h2>
 
           <div className="space-y-3">
             {opco.gaps.map((gap) => (
@@ -331,7 +255,6 @@ const OpcoDetails = () => {
             ))}
           </div>
         </div>
-
       </div>
     </div>
   );

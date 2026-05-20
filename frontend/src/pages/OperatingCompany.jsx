@@ -60,7 +60,6 @@ const OpcoPage = () => {
 
   return (
     <div className="flex-1 bg-slate-100 p-8 overflow-auto">
-
       {/* Header */}
       <div className="mb-10">
         <h1 className="text-3xl font-bold">Operating Companies</h1>
@@ -71,10 +70,8 @@ const OpcoPage = () => {
 
       {/* Centered Table Container */}
       <div className="max-w-5xl mx-auto">
-
         <div className="bg-white rounded-3xl shadow-sm overflow-hidden pb-8">
-
-            {/* Header */}
+          {/* Header */}
           <div className="grid grid-cols-4 w-full bg-slate-900 text-white p-4 text-sm font-semibold">
             <div>OpCo</div>
             <div>Tools</div>
@@ -98,9 +95,7 @@ const OpcoPage = () => {
               </div>
             </div>
           ))}
-
         </div>
-
       </div>
     </div>
   );
